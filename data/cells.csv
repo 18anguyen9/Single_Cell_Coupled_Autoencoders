@@ -1,0 +1,1401 @@
+,Cell Types (GEX)
+0,CD16+ Mono
+1,CD14+ Mono
+2,CD14+ Mono
+3,CD4+ T naive
+4,CD14+ Mono
+5,Plasmablast IGKC+
+6,Naive CD20+ B IGKC-
+7,CD14+ Mono
+8,CD14+ Mono
+9,CD4+ T naive
+10,CD14+ Mono
+11,cDC2
+12,Plasma cell IGKC+
+13,NK
+14,Naive CD20+ B IGKC+
+15,Naive CD20+ B IGKC+
+16,CD14+ Mono
+17,Proerythroblast
+18,Naive CD20+ B IGKC+
+19,Erythroblast
+20,Reticulocyte
+21,CD14+ Mono
+22,NK
+23,Normoblast
+24,Normoblast
+25,CD14+ Mono
+26,CD4+ T naive
+27,NK
+28,CD14+ Mono
+29,CD14+ Mono
+30,G/M prog
+31,CD14+ Mono
+32,CD14+ Mono
+33,CD14+ Mono
+34,CD14+ Mono
+35,Erythroblast
+36,CD14+ Mono
+37,CD8+ T CD69+ CD45RO+
+38,B1 B IGKC-
+39,Transitional B
+40,CD4+ T naive
+41,CD14+ Mono
+42,Normoblast
+43,G/M prog
+44,T reg
+45,CD14+ Mono
+46,CD4+ T activated
+47,MK/E prog
+48,CD14+ Mono
+49,pDC
+50,CD8+ T naive
+51,CD14+ Mono
+52,Naive CD20+ B IGKC+
+53,CD4+ T activated
+54,CD14+ Mono
+55,Reticulocyte
+56,CD14+ Mono
+57,CD8+ T CD49f+
+58,Naive CD20+ B IGKC+
+59,CD4+ T activated
+60,CD4+ T activated
+61,CD14+ Mono
+62,Erythroblast
+63,CD14+ Mono
+64,CD8+ T naive
+65,cDC2
+66,Transitional B
+67,CD14+ Mono
+68,pDC
+69,NK
+70,CD14+ Mono
+71,CD14+ Mono
+72,NK
+73,G/M prog
+74,CD14+ Mono
+75,CD14+ Mono
+76,CD14+ Mono
+77,CD14+ Mono
+78,CD4+ T activated
+79,CD8+ T TIGIT+ CD45RO+
+80,pDC
+81,CD14+ Mono
+82,NK
+83,CD8+ T TIGIT+ CD45RO+
+84,Proerythroblast
+85,NK
+86,NK
+87,CD14+ Mono
+88,Proerythroblast
+89,Naive CD20+ B IGKC+
+90,CD4+ T naive
+91,Naive CD20+ B IGKC+
+92,CD4+ T activated
+93,CD14+ Mono
+94,CD8+ T CD69+ CD45RO+
+95,CD14+ Mono
+96,CD14+ Mono
+97,CD14+ Mono
+98,CD4+ T activated
+99,Naive CD20+ B IGKC+
+100,CD14+ Mono
+101,CD14+ Mono
+102,CD14+ Mono
+103,CD16+ Mono
+104,CD4+ T activated
+105,Normoblast
+106,Reticulocyte
+107,G/M prog
+108,pDC
+109,cDC2
+110,CD4+ T activated
+111,NK
+112,Naive CD20+ B IGKC-
+113,Naive CD20+ B IGKC+
+114,NK
+115,ILC1
+116,CD14+ Mono
+117,CD14+ Mono
+118,CD14+ Mono
+119,CD8+ T CD69+ CD45RO+
+120,CD16+ Mono
+121,cDC2
+122,CD8+ T TIGIT+ CD45RO+
+123,Naive CD20+ B IGKC-
+124,CD4+ T activated
+125,G/M prog
+126,CD14+ Mono
+127,CD8+ T CD57+ CD45RA+
+128,CD4+ T activated
+129,cDC2
+130,G/M prog
+131,CD4+ T activated
+132,CD14+ Mono
+133,CD14+ Mono
+134,MAIT
+135,Naive CD20+ B IGKC+
+136,Erythroblast
+137,T reg
+138,NK
+139,CD4+ T activated
+140,Naive CD20+ B IGKC+
+141,Reticulocyte
+142,NK
+143,CD14+ Mono
+144,CD14+ Mono
+145,G/M prog
+146,Erythroblast
+147,T reg
+148,HSC
+149,CD8+ T CD49f+
+150,Naive CD20+ B IGKC+
+151,Naive CD20+ B IGKC+
+152,CD14+ Mono
+153,Proerythroblast
+154,CD14+ Mono
+155,CD14+ Mono
+156,G/M prog
+157,CD8+ T TIGIT+ CD45RO+
+158,NK
+159,CD8+ T naive
+160,CD14+ Mono
+161,CD14+ Mono
+162,CD4+ T naive
+163,CD14+ Mono
+164,CD4+ T activated
+165,Erythroblast
+166,Naive CD20+ B IGKC+
+167,CD14+ Mono
+168,NK
+169,NK
+170,CD8+ T naive
+171,Reticulocyte
+172,CD16+ Mono
+173,Erythroblast
+174,Reticulocyte
+175,CD4+ T naive
+176,CD4+ T naive
+177,CD8+ T CD49f+
+178,HSC
+179,G/M prog
+180,Erythroblast
+181,CD14+ Mono
+182,Naive CD20+ B IGKC-
+183,Erythroblast
+184,CD8+ T CD69+ CD45RA+
+185,CD4+ T activated
+186,Normoblast
+187,CD4+ T naive
+188,CD14+ Mono
+189,NK
+190,CD14+ Mono
+191,Naive CD20+ B IGKC+
+192,Lymph prog
+193,B1 B IGKC+
+194,CD4+ T activated
+195,HSC
+196,cDC2
+197,CD4+ T activated
+198,Reticulocyte
+199,Naive CD20+ B IGKC-
+200,Plasmablast IGKC+
+201,Reticulocyte
+202,Normoblast
+203,CD8+ T TIGIT+ CD45RA+
+204,MAIT
+205,Reticulocyte
+206,CD14+ Mono
+207,CD4+ T naive
+208,NK
+209,Transitional B
+210,cDC2
+211,NK
+212,CD14+ Mono
+213,CD14+ Mono
+214,CD14+ Mono
+215,CD14+ Mono
+216,CD4+ T activated
+217,pDC
+218,Erythroblast
+219,Naive CD20+ B IGKC-
+220,CD4+ T naive
+221,CD14+ Mono
+222,CD4+ T naive
+223,CD14+ Mono
+224,Naive CD20+ B IGKC-
+225,CD14+ Mono
+226,G/M prog
+227,MK/E prog
+228,Erythroblast
+229,CD14+ Mono
+230,CD8+ T CD57+ CD45RO+
+231,NK
+232,pDC
+233,CD8+ T CD69+ CD45RA+
+234,CD14+ Mono
+235,Proerythroblast
+236,NK
+237,CD14+ Mono
+238,MK/E prog
+239,G/M prog
+240,Reticulocyte
+241,CD4+ T activated
+242,CD14+ Mono
+243,CD14+ Mono
+244,CD14+ Mono
+245,pDC
+246,CD14+ Mono
+247,Reticulocyte
+248,CD4+ T activated
+249,MK/E prog
+250,CD14+ Mono
+251,pDC
+252,Lymph prog
+253,CD8+ T CD57+ CD45RO+
+254,NK
+255,MAIT
+256,CD4+ T activated integrinB7+
+257,CD14+ Mono
+258,CD16+ Mono
+259,CD4+ T activated
+260,CD14+ Mono
+261,CD4+ T activated
+262,CD4+ T activated
+263,CD14+ Mono
+264,Reticulocyte
+265,Reticulocyte
+266,Plasmablast IGKC+
+267,CD14+ Mono
+268,CD4+ T activated
+269,CD14+ Mono
+270,MK/E prog
+271,CD14+ Mono
+272,CD14+ Mono
+273,CD14+ Mono
+274,Erythroblast
+275,Plasmablast IGKC-
+276,CD4+ T activated
+277,CD4+ T activated
+278,CD4+ T naive
+279,Reticulocyte
+280,pDC
+281,NK
+282,CD14+ Mono
+283,CD4+ T activated
+284,CD14+ Mono
+285,Erythroblast
+286,B1 B IGKC-
+287,Naive CD20+ B IGKC+
+288,NK
+289,CD14+ Mono
+290,CD8+ T CD69+ CD45RA+
+291,NK
+292,CD4+ T naive
+293,cDC2
+294,CD4+ T naive
+295,NK
+296,CD14+ Mono
+297,Reticulocyte
+298,CD16+ Mono
+299,CD14+ Mono
+300,cDC2
+301,CD14+ Mono
+302,pDC
+303,CD14+ Mono
+304,pDC
+305,CD14+ Mono
+306,Erythroblast
+307,Transitional B
+308,MK/E prog
+309,CD14+ Mono
+310,pDC
+311,G/M prog
+312,Naive CD20+ B IGKC-
+313,Naive CD20+ B IGKC+
+314,CD4+ T activated
+315,CD4+ T activated
+316,CD14+ Mono
+317,CD14+ Mono
+318,Naive CD20+ B IGKC+
+319,Transitional B
+320,Erythroblast
+321,Naive CD20+ B IGKC+
+322,B1 B IGKC+
+323,CD14+ Mono
+324,CD14+ Mono
+325,CD14+ Mono
+326,CD14+ Mono
+327,NK
+328,CD14+ Mono
+329,CD14+ Mono
+330,Reticulocyte
+331,G/M prog
+332,CD14+ Mono
+333,G/M prog
+334,CD8+ T CD49f+
+335,Naive CD20+ B IGKC+
+336,Reticulocyte
+337,CD14+ Mono
+338,NK
+339,Normoblast
+340,CD16+ Mono
+341,CD4+ T naive
+342,CD14+ Mono
+343,CD14+ Mono
+344,HSC
+345,Reticulocyte
+346,CD16+ Mono
+347,HSC
+348,Normoblast
+349,NK
+350,CD14+ Mono
+351,CD14+ Mono
+352,CD14+ Mono
+353,CD14+ Mono
+354,Erythroblast
+355,NK
+356,CD14+ Mono
+357,CD14+ Mono
+358,CD8+ T naive
+359,Erythroblast
+360,CD4+ T naive
+361,pDC
+362,CD8+ T TIGIT+ CD45RA+
+363,CD14+ Mono
+364,CD14+ Mono
+365,CD8+ T CD69+ CD45RA+
+366,CD14+ Mono
+367,Erythroblast
+368,NK
+369,CD4+ T activated
+370,CD8+ T CD49f+
+371,ILC1
+372,Plasma cell IGKC-
+373,CD4+ T naive
+374,CD14+ Mono
+375,CD14+ Mono
+376,CD4+ T activated
+377,HSC
+378,G/M prog
+379,CD4+ T naive
+380,CD14+ Mono
+381,CD4+ T activated
+382,CD16+ Mono
+383,CD16+ Mono
+384,CD8+ T CD69+ CD45RA+
+385,CD14+ Mono
+386,NK
+387,Reticulocyte
+388,CD8+ T naive
+389,pDC
+390,Reticulocyte
+391,NK
+392,CD14+ Mono
+393,T reg
+394,CD14+ Mono
+395,Lymph prog
+396,Naive CD20+ B IGKC-
+397,CD4+ T naive
+398,CD16+ Mono
+399,Transitional B
+400,MK/E prog
+401,pDC
+402,CD14+ Mono
+403,CD4+ T activated
+404,CD14+ Mono
+405,Reticulocyte
+406,pDC
+407,CD14+ Mono
+408,CD4+ T naive
+409,CD8+ T naive
+410,CD14+ Mono
+411,NK
+412,Erythroblast
+413,ILC
+414,CD14+ Mono
+415,CD4+ T activated
+416,CD8+ T CD69+ CD45RA+
+417,ILC1
+418,cDC2
+419,NK
+420,CD14+ Mono
+421,CD14+ Mono
+422,CD4+ T activated
+423,CD14+ Mono
+424,G/M prog
+425,CD8+ T naive
+426,CD14+ Mono
+427,CD14+ Mono
+428,CD14+ Mono
+429,CD14+ Mono
+430,Proerythroblast
+431,CD14+ Mono
+432,NK
+433,CD14+ Mono
+434,CD14+ Mono
+435,CD4+ T naive
+436,CD4+ T naive
+437,NK
+438,CD14+ Mono
+439,CD14+ Mono
+440,CD8+ T CD57+ CD45RA+
+441,Naive CD20+ B IGKC+
+442,CD14+ Mono
+443,B1 B IGKC-
+444,CD14+ Mono
+445,Proerythroblast
+446,Naive CD20+ B IGKC-
+447,NK
+448,CD8+ T naive
+449,MK/E prog
+450,CD4+ T activated
+451,CD14+ Mono
+452,CD4+ T naive
+453,CD14+ Mono
+454,CD14+ Mono
+455,pDC
+456,CD14+ Mono
+457,cDC2
+458,HSC
+459,Proerythroblast
+460,CD14+ Mono
+461,Reticulocyte
+462,CD4+ T activated
+463,CD14+ Mono
+464,CD14+ Mono
+465,MK/E prog
+466,CD14+ Mono
+467,Erythroblast
+468,CD4+ T naive
+469,Reticulocyte
+470,CD14+ Mono
+471,CD14+ Mono
+472,CD14+ Mono
+473,Lymph prog
+474,Erythroblast
+475,CD14+ Mono
+476,Reticulocyte
+477,NK
+478,NK
+479,Proerythroblast
+480,Lymph prog
+481,G/M prog
+482,CD14+ Mono
+483,Erythroblast
+484,CD14+ Mono
+485,pDC
+486,Naive CD20+ B IGKC-
+487,CD8+ T naive
+488,CD4+ T naive
+489,CD14+ Mono
+490,CD14+ Mono
+491,CD16+ Mono
+492,HSC
+493,Reticulocyte
+494,CD4+ T activated
+495,T reg
+496,B1 B IGKC-
+497,CD14+ Mono
+498,B1 B IGKC-
+499,Naive CD20+ B IGKC-
+500,G/M prog
+501,B1 B IGKC-
+502,ILC
+503,Erythroblast
+504,G/M prog
+505,NK
+506,NK
+507,Reticulocyte
+508,CD14+ Mono
+509,Erythroblast
+510,cDC2
+511,NK
+512,G/M prog
+513,CD16+ Mono
+514,CD14+ Mono
+515,CD14+ Mono
+516,CD8+ T naive
+517,CD4+ T activated
+518,CD4+ T activated
+519,cDC2
+520,Naive CD20+ B IGKC+
+521,CD14+ Mono
+522,CD8+ T naive
+523,HSC
+524,Erythroblast
+525,G/M prog
+526,Reticulocyte
+527,CD14+ Mono
+528,Normoblast
+529,Proerythroblast
+530,CD14+ Mono
+531,NK
+532,pDC
+533,Lymph prog
+534,CD14+ Mono
+535,Naive CD20+ B IGKC+
+536,Reticulocyte
+537,CD14+ Mono
+538,Erythroblast
+539,CD4+ T naive
+540,CD8+ T CD69+ CD45RO+
+541,CD14+ Mono
+542,Erythroblast
+543,CD4+ T naive
+544,Lymph prog
+545,NK
+546,ILC
+547,CD14+ Mono
+548,CD14+ Mono
+549,T reg
+550,Reticulocyte
+551,CD4+ T activated
+552,CD8+ T CD49f+
+553,pDC
+554,CD14+ Mono
+555,CD14+ Mono
+556,CD14+ Mono
+557,Proerythroblast
+558,Transitional B
+559,Naive CD20+ B IGKC+
+560,pDC
+561,Reticulocyte
+562,Reticulocyte
+563,pDC
+564,CD14+ Mono
+565,CD4+ T naive
+566,Naive CD20+ B IGKC+
+567,Naive CD20+ B IGKC+
+568,Reticulocyte
+569,CD14+ Mono
+570,Naive CD20+ B IGKC+
+571,CD4+ T activated
+572,CD4+ T activated
+573,NK
+574,Naive CD20+ B IGKC+
+575,CD14+ Mono
+576,pDC
+577,CD14+ Mono
+578,CD4+ T naive
+579,Normoblast
+580,Erythroblast
+581,CD14+ Mono
+582,CD14+ Mono
+583,NK
+584,Naive CD20+ B IGKC-
+585,CD14+ Mono
+586,CD14+ Mono
+587,CD4+ T activated
+588,CD8+ T CD49f+
+589,CD4+ T naive
+590,Reticulocyte
+591,CD14+ Mono
+592,ILC
+593,NK
+594,CD16+ Mono
+595,cDC2
+596,Erythroblast
+597,CD14+ Mono
+598,Naive CD20+ B IGKC-
+599,CD8+ T naive
+600,T reg
+601,Transitional B
+602,CD4+ T naive
+603,CD4+ T activated
+604,CD14+ Mono
+605,Normoblast
+606,CD4+ T activated integrinB7+
+607,Naive CD20+ B IGKC+
+608,CD14+ Mono
+609,Erythroblast
+610,CD14+ Mono
+611,Erythroblast
+612,Erythroblast
+613,Naive CD20+ B IGKC+
+614,pDC
+615,CD14+ Mono
+616,CD14+ Mono
+617,Erythroblast
+618,CD8+ T TIGIT+ CD45RA+
+619,CD14+ Mono
+620,CD14+ Mono
+621,CD4+ T activated
+622,CD14+ Mono
+623,CD14+ Mono
+624,CD14+ Mono
+625,CD14+ Mono
+626,G/M prog
+627,Erythroblast
+628,Proerythroblast
+629,CD14+ Mono
+630,CD4+ T activated
+631,NK
+632,NK
+633,NK
+634,CD16+ Mono
+635,B1 B IGKC+
+636,CD14+ Mono
+637,Erythroblast
+638,Reticulocyte
+639,CD4+ T naive
+640,Naive CD20+ B IGKC+
+641,Normoblast
+642,CD14+ Mono
+643,NK
+644,NK
+645,CD14+ Mono
+646,Plasma cell IGKC-
+647,Erythroblast
+648,Normoblast
+649,CD14+ Mono
+650,HSC
+651,CD14+ Mono
+652,CD14+ Mono
+653,CD8+ T CD57+ CD45RA+
+654,CD8+ T CD57+ CD45RO+
+655,Reticulocyte
+656,CD4+ T activated
+657,CD14+ Mono
+658,CD4+ T activated
+659,Naive CD20+ B IGKC-
+660,CD4+ T naive
+661,Erythroblast
+662,Erythroblast
+663,CD8+ T CD57+ CD45RA+
+664,CD14+ Mono
+665,cDC2
+666,CD4+ T activated
+667,CD14+ Mono
+668,Naive CD20+ B IGKC+
+669,CD4+ T activated
+670,CD14+ Mono
+671,pDC
+672,CD14+ Mono
+673,CD4+ T naive
+674,Reticulocyte
+675,Naive CD20+ B IGKC+
+676,CD14+ Mono
+677,CD8+ T naive
+678,cDC2
+679,NK
+680,CD14+ Mono
+681,CD14+ Mono
+682,CD4+ T naive
+683,HSC
+684,CD14+ Mono
+685,NK
+686,Naive CD20+ B IGKC+
+687,Naive CD20+ B IGKC+
+688,T reg
+689,CD14+ Mono
+690,ILC1
+691,cDC2
+692,NK
+693,CD8+ T TIGIT+ CD45RA+
+694,HSC
+695,Proerythroblast
+696,CD14+ Mono
+697,CD14+ Mono
+698,CD14+ Mono
+699,G/M prog
+700,Reticulocyte
+701,G/M prog
+702,Normoblast
+703,pDC
+704,CD14+ Mono
+705,CD14+ Mono
+706,CD4+ T activated
+707,CD14+ Mono
+708,CD4+ T activated
+709,NK
+710,CD14+ Mono
+711,HSC
+712,CD14+ Mono
+713,Lymph prog
+714,CD14+ Mono
+715,CD4+ T naive
+716,CD14+ Mono
+717,CD14+ Mono
+718,NK
+719,Naive CD20+ B IGKC+
+720,Erythroblast
+721,CD14+ Mono
+722,NK
+723,MK/E prog
+724,Reticulocyte
+725,Reticulocyte
+726,CD14+ Mono
+727,CD14+ Mono
+728,Lymph prog
+729,B1 B IGKC-
+730,CD14+ Mono
+731,CD14+ Mono
+732,CD14+ Mono
+733,CD4+ T naive
+734,CD14+ Mono
+735,Naive CD20+ B IGKC+
+736,CD14+ Mono
+737,Reticulocyte
+738,CD4+ T activated
+739,cDC2
+740,CD14+ Mono
+741,CD14+ Mono
+742,CD14+ Mono
+743,gdT TCRVD2+
+744,NK
+745,CD14+ Mono
+746,CD16+ Mono
+747,CD14+ Mono
+748,CD14+ Mono
+749,Naive CD20+ B IGKC+
+750,CD14+ Mono
+751,CD4+ T activated
+752,CD14+ Mono
+753,CD14+ Mono
+754,CD14+ Mono
+755,Erythroblast
+756,NK
+757,CD14+ Mono
+758,CD14+ Mono
+759,CD4+ T naive
+760,NK
+761,Naive CD20+ B IGKC+
+762,NK
+763,CD8+ T CD69+ CD45RO+
+764,CD14+ Mono
+765,CD14+ Mono
+766,NK
+767,CD4+ T activated
+768,CD14+ Mono
+769,NK
+770,CD14+ Mono
+771,CD14+ Mono
+772,Transitional B
+773,CD14+ Mono
+774,ILC
+775,CD14+ Mono
+776,CD14+ Mono
+777,Naive CD20+ B IGKC+
+778,CD14+ Mono
+779,cDC2
+780,CD8+ T TIGIT+ CD45RA+
+781,Naive CD20+ B IGKC-
+782,Proerythroblast
+783,Naive CD20+ B IGKC-
+784,Transitional B
+785,CD4+ T activated
+786,CD4+ T naive
+787,CD8+ T naive
+788,pDC
+789,CD14+ Mono
+790,NK
+791,CD14+ Mono
+792,CD4+ T naive
+793,CD14+ Mono
+794,Erythroblast
+795,Erythroblast
+796,CD14+ Mono
+797,CD14+ Mono
+798,CD14+ Mono
+799,CD4+ T activated
+800,CD14+ Mono
+801,NK
+802,CD14+ Mono
+803,T prog cycling
+804,CD14+ Mono
+805,CD14+ Mono
+806,CD8+ T CD57+ CD45RA+
+807,CD14+ Mono
+808,Naive CD20+ B IGKC+
+809,CD14+ Mono
+810,CD8+ T CD57+ CD45RO+
+811,CD8+ T CD57+ CD45RA+
+812,CD14+ Mono
+813,CD14+ Mono
+814,pDC
+815,Reticulocyte
+816,Naive CD20+ B IGKC+
+817,Transitional B
+818,CD14+ Mono
+819,Lymph prog
+820,CD8+ T CD49f+
+821,Naive CD20+ B IGKC+
+822,B1 B IGKC-
+823,CD14+ Mono
+824,CD4+ T naive
+825,Plasma cell IGKC-
+826,CD14+ Mono
+827,CD14+ Mono
+828,CD8+ T CD69+ CD45RO+
+829,CD14+ Mono
+830,Reticulocyte
+831,Transitional B
+832,NK
+833,CD14+ Mono
+834,cDC2
+835,CD4+ T naive
+836,CD8+ T CD69+ CD45RO+
+837,CD14+ Mono
+838,CD4+ T naive
+839,Transitional B
+840,Naive CD20+ B IGKC-
+841,CD14+ Mono
+842,T reg
+843,CD14+ Mono
+844,CD14+ Mono
+845,CD14+ Mono
+846,NK
+847,Erythroblast
+848,Naive CD20+ B IGKC-
+849,CD8+ T naive
+850,CD4+ T naive
+851,pDC
+852,CD14+ Mono
+853,NK
+854,HSC
+855,Naive CD20+ B IGKC+
+856,Erythroblast
+857,CD4+ T activated
+858,CD4+ T naive
+859,HSC
+860,CD4+ T naive
+861,CD4+ T naive
+862,CD4+ T activated
+863,Erythroblast
+864,Reticulocyte
+865,Erythroblast
+866,CD16+ Mono
+867,CD14+ Mono
+868,CD8+ T CD69+ CD45RA+
+869,CD14+ Mono
+870,Plasma cell IGKC+
+871,Erythroblast
+872,NK
+873,CD14+ Mono
+874,CD8+ T CD57+ CD45RO+
+875,G/M prog
+876,CD8+ T CD69+ CD45RO+
+877,CD14+ Mono
+878,MAIT
+879,Erythroblast
+880,Naive CD20+ B IGKC+
+881,CD14+ Mono
+882,CD4+ T activated integrinB7+
+883,CD14+ Mono
+884,CD4+ T activated
+885,CD16+ Mono
+886,Erythroblast
+887,CD14+ Mono
+888,CD14+ Mono
+889,Proerythroblast
+890,CD14+ Mono
+891,Transitional B
+892,NK
+893,CD16+ Mono
+894,CD14+ Mono
+895,CD14+ Mono
+896,cDC2
+897,CD14+ Mono
+898,CD8+ T naive
+899,CD16+ Mono
+900,CD14+ Mono
+901,CD14+ Mono
+902,CD14+ Mono
+903,CD4+ T naive
+904,NK
+905,B1 B IGKC+
+906,CD16+ Mono
+907,CD14+ Mono
+908,CD14+ Mono
+909,T reg
+910,G/M prog
+911,Naive CD20+ B IGKC+
+912,CD14+ Mono
+913,T reg
+914,CD14+ Mono
+915,NK
+916,CD14+ Mono
+917,CD14+ Mono
+918,CD14+ Mono
+919,CD14+ Mono
+920,Naive CD20+ B IGKC+
+921,Naive CD20+ B IGKC+
+922,B1 B IGKC-
+923,ILC1
+924,CD14+ Mono
+925,HSC
+926,CD14+ Mono
+927,pDC
+928,CD14+ Mono
+929,Naive CD20+ B IGKC+
+930,CD8+ T CD49f+
+931,CD4+ T naive
+932,CD16+ Mono
+933,CD14+ Mono
+934,CD4+ T activated
+935,Reticulocyte
+936,CD14+ Mono
+937,CD14+ Mono
+938,Naive CD20+ B IGKC+
+939,CD4+ T activated
+940,Transitional B
+941,NK
+942,Normoblast
+943,CD14+ Mono
+944,CD4+ T naive
+945,CD14+ Mono
+946,CD14+ Mono
+947,CD14+ Mono
+948,CD14+ Mono
+949,CD4+ T activated
+950,CD8+ T naive
+951,CD4+ T activated
+952,CD14+ Mono
+953,CD4+ T activated integrinB7+
+954,Erythroblast
+955,CD4+ T naive
+956,Lymph prog
+957,CD14+ Mono
+958,Plasmablast IGKC+
+959,Reticulocyte
+960,CD14+ Mono
+961,CD4+ T naive
+962,Lymph prog
+963,CD4+ T activated
+964,NK
+965,CD4+ T activated
+966,CD14+ Mono
+967,CD14+ Mono
+968,Reticulocyte
+969,CD14+ Mono
+970,CD8+ T CD69+ CD45RA+
+971,Erythroblast
+972,CD14+ Mono
+973,CD4+ T activated
+974,Normoblast
+975,CD14+ Mono
+976,CD4+ T activated integrinB7+
+977,cDC2
+978,CD14+ Mono
+979,CD14+ Mono
+980,Reticulocyte
+981,Naive CD20+ B IGKC+
+982,HSC
+983,CD14+ Mono
+984,CD14+ Mono
+985,CD14+ Mono
+986,CD14+ Mono
+987,CD14+ Mono
+988,Reticulocyte
+989,Normoblast
+990,CD4+ T activated
+991,CD14+ Mono
+992,NK
+993,Normoblast
+994,cDC2
+995,Erythroblast
+996,CD14+ Mono
+997,CD8+ T CD69+ CD45RA+
+998,Lymph prog
+999,CD16+ Mono
+1000,CD14+ Mono
+1001,CD14+ Mono
+1002,Lymph prog
+1003,CD14+ Mono
+1004,CD14+ Mono
+1005,CD14+ Mono
+1006,cDC2
+1007,CD14+ Mono
+1008,CD14+ Mono
+1009,CD14+ Mono
+1010,CD14+ Mono
+1011,T reg
+1012,CD4+ T activated integrinB7+
+1013,CD14+ Mono
+1014,NK
+1015,CD4+ T activated integrinB7+
+1016,cDC2
+1017,CD4+ T activated
+1018,Naive CD20+ B IGKC+
+1019,Naive CD20+ B IGKC+
+1020,CD14+ Mono
+1021,CD14+ Mono
+1022,NK
+1023,CD14+ Mono
+1024,CD4+ T activated
+1025,CD8+ T TIGIT+ CD45RA+
+1026,NK
+1027,pDC
+1028,CD14+ Mono
+1029,gdT CD158b+
+1030,Reticulocyte
+1031,CD4+ T naive
+1032,NK
+1033,Proerythroblast
+1034,CD4+ T activated
+1035,Naive CD20+ B IGKC+
+1036,pDC
+1037,NK
+1038,CD4+ T activated
+1039,CD14+ Mono
+1040,B1 B IGKC+
+1041,Normoblast
+1042,CD14+ Mono
+1043,Normoblast
+1044,CD14+ Mono
+1045,Erythroblast
+1046,Normoblast
+1047,Normoblast
+1048,T reg
+1049,T reg
+1050,CD14+ Mono
+1051,Reticulocyte
+1052,CD14+ Mono
+1053,Naive CD20+ B IGKC+
+1054,CD8+ T TIGIT+ CD45RO+
+1055,Reticulocyte
+1056,CD14+ Mono
+1057,CD14+ Mono
+1058,Naive CD20+ B IGKC+
+1059,CD8+ T CD69+ CD45RO+
+1060,CD14+ Mono
+1061,CD14+ Mono
+1062,CD14+ Mono
+1063,MAIT
+1064,Naive CD20+ B IGKC+
+1065,Erythroblast
+1066,CD14+ Mono
+1067,HSC
+1068,Proerythroblast
+1069,Lymph prog
+1070,cDC2
+1071,cDC2
+1072,HSC
+1073,Naive CD20+ B IGKC+
+1074,Naive CD20+ B IGKC+
+1075,NK
+1076,CD8+ T CD57+ CD45RO+
+1077,CD14+ Mono
+1078,cDC2
+1079,CD14+ Mono
+1080,CD8+ T TIGIT+ CD45RA+
+1081,T reg
+1082,CD14+ Mono
+1083,Transitional B
+1084,Reticulocyte
+1085,Erythroblast
+1086,CD14+ Mono
+1087,Erythroblast
+1088,CD14+ Mono
+1089,CD14+ Mono
+1090,Naive CD20+ B IGKC+
+1091,T reg
+1092,Erythroblast
+1093,CD16+ Mono
+1094,CD14+ Mono
+1095,Lymph prog
+1096,CD14+ Mono
+1097,CD14+ Mono
+1098,Naive CD20+ B IGKC+
+1099,NK
+1100,NK
+1101,HSC
+1102,CD4+ T activated
+1103,CD14+ Mono
+1104,Reticulocyte
+1105,CD14+ Mono
+1106,Reticulocyte
+1107,CD14+ Mono
+1108,CD14+ Mono
+1109,NK
+1110,CD8+ T CD49f+
+1111,Erythroblast
+1112,Normoblast
+1113,Normoblast
+1114,Reticulocyte
+1115,Erythroblast
+1116,CD4+ T activated
+1117,CD14+ Mono
+1118,CD4+ T activated integrinB7+
+1119,CD14+ Mono
+1120,CD4+ T naive
+1121,Reticulocyte
+1122,CD14+ Mono
+1123,CD14+ Mono
+1124,CD14+ Mono
+1125,Naive CD20+ B IGKC+
+1126,CD8+ T CD57+ CD45RA+
+1127,Erythroblast
+1128,CD8+ T CD57+ CD45RA+
+1129,NK
+1130,CD8+ T naive
+1131,CD14+ Mono
+1132,CD8+ T CD69+ CD45RA+
+1133,CD14+ Mono
+1134,HSC
+1135,MAIT
+1136,gdT TCRVD2+
+1137,CD14+ Mono
+1138,Reticulocyte
+1139,CD14+ Mono
+1140,CD4+ T activated
+1141,pDC
+1142,Reticulocyte
+1143,G/M prog
+1144,Naive CD20+ B IGKC+
+1145,Naive CD20+ B IGKC-
+1146,CD4+ T naive
+1147,cDC2
+1148,G/M prog
+1149,CD14+ Mono
+1150,Erythroblast
+1151,pDC
+1152,CD8+ T naive
+1153,CD8+ T naive
+1154,Proerythroblast
+1155,CD14+ Mono
+1156,CD14+ Mono
+1157,CD14+ Mono
+1158,NK
+1159,CD4+ T activated
+1160,CD4+ T activated integrinB7+
+1161,Reticulocyte
+1162,CD14+ Mono
+1163,CD4+ T activated
+1164,Erythroblast
+1165,CD14+ Mono
+1166,CD8+ T naive
+1167,CD4+ T activated
+1168,HSC
+1169,CD4+ T activated
+1170,Erythroblast
+1171,CD14+ Mono
+1172,NK
+1173,CD8+ T naive
+1174,CD14+ Mono
+1175,pDC
+1176,Erythroblast
+1177,CD4+ T activated
+1178,CD14+ Mono
+1179,pDC
+1180,CD8+ T CD69+ CD45RO+
+1181,pDC
+1182,HSC
+1183,Proerythroblast
+1184,CD8+ T CD49f+
+1185,CD14+ Mono
+1186,CD8+ T TIGIT+ CD45RA+
+1187,Reticulocyte
+1188,CD14+ Mono
+1189,Naive CD20+ B IGKC-
+1190,HSC
+1191,pDC
+1192,CD4+ T activated
+1193,CD8+ T CD69+ CD45RA+
+1194,cDC2
+1195,ILC
+1196,Naive CD20+ B IGKC+
+1197,CD14+ Mono
+1198,CD14+ Mono
+1199,CD4+ T activated
+1200,CD14+ Mono
+1201,MAIT
+1202,Erythroblast
+1203,CD14+ Mono
+1204,CD14+ Mono
+1205,CD8+ T CD57+ CD45RA+
+1206,Reticulocyte
+1207,CD14+ Mono
+1208,CD4+ T naive
+1209,NK
+1210,CD4+ T naive
+1211,CD8+ T CD49f+
+1212,CD14+ Mono
+1213,CD14+ Mono
+1214,Naive CD20+ B IGKC+
+1215,Lymph prog
+1216,G/M prog
+1217,pDC
+1218,Naive CD20+ B IGKC-
+1219,NK
+1220,CD14+ Mono
+1221,CD14+ Mono
+1222,Naive CD20+ B IGKC+
+1223,CD8+ T naive
+1224,CD14+ Mono
+1225,Reticulocyte
+1226,CD14+ Mono
+1227,Reticulocyte
+1228,CD14+ Mono
+1229,CD14+ Mono
+1230,ILC1
+1231,CD14+ Mono
+1232,CD14+ Mono
+1233,Plasma cell IGKC+
+1234,CD14+ Mono
+1235,Proerythroblast
+1236,Reticulocyte
+1237,HSC
+1238,cDC2
+1239,NK
+1240,HSC
+1241,Naive CD20+ B IGKC-
+1242,ILC1
+1243,Reticulocyte
+1244,CD4+ T naive
+1245,Reticulocyte
+1246,CD14+ Mono
+1247,Reticulocyte
+1248,NK
+1249,CD14+ Mono
+1250,NK
+1251,CD8+ T naive
+1252,cDC2
+1253,NK
+1254,CD14+ Mono
+1255,CD14+ Mono
+1256,CD14+ Mono
+1257,Erythroblast
+1258,CD14+ Mono
+1259,CD8+ T CD57+ CD45RA+
+1260,NK
+1261,CD14+ Mono
+1262,CD14+ Mono
+1263,Erythroblast
+1264,CD14+ Mono
+1265,Normoblast
+1266,CD4+ T activated
+1267,Naive CD20+ B IGKC+
+1268,Naive CD20+ B IGKC+
+1269,Naive CD20+ B IGKC-
+1270,CD4+ T activated
+1271,CD14+ Mono
+1272,CD14+ Mono
+1273,CD14+ Mono
+1274,CD14+ Mono
+1275,Normoblast
+1276,CD8+ T TIGIT+ CD45RO+
+1277,NK
+1278,CD14+ Mono
+1279,CD4+ T activated
+1280,CD14+ Mono
+1281,Plasma cell IGKC-
+1282,Lymph prog
+1283,Proerythroblast
+1284,B1 B IGKC-
+1285,CD8+ T naive
+1286,CD16+ Mono
+1287,CD14+ Mono
+1288,CD14+ Mono
+1289,CD14+ Mono
+1290,CD14+ Mono
+1291,CD8+ T CD57+ CD45RO+
+1292,HSC
+1293,Naive CD20+ B IGKC-
+1294,CD14+ Mono
+1295,G/M prog
+1296,Naive CD20+ B IGKC-
+1297,Naive CD20+ B IGKC+
+1298,CD14+ Mono
+1299,CD4+ T naive
+1300,CD4+ T naive
+1301,Naive CD20+ B IGKC-
+1302,CD14+ Mono
+1303,HSC
+1304,B1 B IGKC+
+1305,CD4+ T activated
+1306,cDC2
+1307,NK
+1308,Naive CD20+ B IGKC+
+1309,CD14+ Mono
+1310,CD4+ T naive
+1311,Plasmablast IGKC-
+1312,CD14+ Mono
+1313,NK
+1314,CD14+ Mono
+1315,CD4+ T activated
+1316,CD14+ Mono
+1317,CD8+ T naive
+1318,CD14+ Mono
+1319,Transitional B
+1320,CD14+ Mono
+1321,CD14+ Mono
+1322,CD8+ T CD69+ CD45RA+
+1323,CD8+ T CD57+ CD45RA+
+1324,CD4+ T activated
+1325,CD14+ Mono
+1326,CD14+ Mono
+1327,pDC
+1328,MAIT
+1329,CD4+ T activated
+1330,CD14+ Mono
+1331,pDC
+1332,CD8+ T TIGIT+ CD45RO+
+1333,Naive CD20+ B IGKC-
+1334,Naive CD20+ B IGKC-
+1335,CD14+ Mono
+1336,CD14+ Mono
+1337,CD4+ T naive
+1338,NK
+1339,CD14+ Mono
+1340,CD16+ Mono
+1341,G/M prog
+1342,CD4+ T naive
+1343,CD14+ Mono
+1344,pDC
+1345,G/M prog
+1346,CD4+ T activated integrinB7+
+1347,CD8+ T naive
+1348,CD8+ T naive
+1349,NK
+1350,T reg
+1351,Lymph prog
+1352,Reticulocyte
+1353,CD14+ Mono
+1354,CD14+ Mono
+1355,CD16+ Mono
+1356,cDC2
+1357,CD4+ T naive
+1358,Reticulocyte
+1359,CD8+ T CD49f+
+1360,Reticulocyte
+1361,CD8+ T naive
+1362,NK
+1363,NK
+1364,cDC2
+1365,CD14+ Mono
+1366,B1 B IGKC-
+1367,CD14+ Mono
+1368,CD14+ Mono
+1369,CD14+ Mono
+1370,CD14+ Mono
+1371,CD14+ Mono
+1372,CD14+ Mono
+1373,NK
+1374,Plasma cell IGKC+
+1375,Proerythroblast
+1376,NK
+1377,CD14+ Mono
+1378,CD8+ T CD69+ CD45RA+
+1379,HSC
+1380,cDC2
+1381,Reticulocyte
+1382,CD4+ T naive
+1383,CD8+ T naive
+1384,NK
+1385,Proerythroblast
+1386,CD14+ Mono
+1387,NK
+1388,Lymph prog
+1389,CD8+ T naive
+1390,CD14+ Mono
+1391,Transitional B
+1392,CD4+ T naive
+1393,CD14+ Mono
+1394,MK/E prog
+1395,CD14+ Mono
+1396,Erythroblast
+1397,CD14+ Mono
+1398,Erythroblast
+1399,Transitional B

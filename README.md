@@ -1,1 +1,1 @@
-# Single_Cell_Coupled_Autoencoder
+# Single-Cell-Autoencoders
