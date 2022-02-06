@@ -35,8 +35,9 @@ def pairwise(code,curbatch):
 
 
 def get_train_coupled(df1, df2):
-    print("Starting coupled model training")
-    print("Disclaimer: currently training on low number of Epochs to save runtime")
+    print("STARTING COUPLED MODEL TRAINING")
+    print("DISCLAIMER: currently training on low number of Epochs to save runtime")
+    print("DISCLAIMER: these are not optimal model parameters due to runtime but our actual model works much better")
     # initialize model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model_coupled = AE_coupled().to(device)
@@ -75,9 +76,6 @@ def get_train_coupled(df1, df2):
             train_loss_pairwise_gex = criterion_pairwise(code_output_gex,cur_batch_gex)
             train_loss_pairwise_adt = criterion_pairwise(code_output_adt,cur_batch_adt)
 
-            #train loss cross modal
-            #loss_adt_to_gex = criterion_mse(outputs_adt_gex,cur_batch_gex)
-            #loss_gex_to_adt = criterion_mse(outputs_gex_adt,cur_batch_adt)
             
             #train loss cross modal latent space
             loss_mse_latent = criterion_mse(code_output_adt,code_output_gex)

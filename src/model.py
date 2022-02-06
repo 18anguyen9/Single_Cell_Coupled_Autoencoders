@@ -141,23 +141,20 @@ def predict_mod(mod,test_data):
     prediction = mod(data)[1]
     return nn.MSELoss()(data, prediction)
 
-# compute reconstruction loss of a translation made from one modality
-# to another, specifically for the coupled autoencoder
 
-# modality has two possiblities: 'adt', 'gex', denoting the type
-# passed into 'test_data'
-def predict_crossmodal(mod, test_data, eval_data, modality):
+# compute losses given target modality
+def predict_crossmodal(mod, test_data, eval_data, target_modality):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     loss_metric = nn.MSELoss()
     
     data = test_data.to(device)
     translation = eval_data.to(device)
     
-    if modality == 'gex':
+    if target_modality == 'adt':
         prediction = mod(data)[1]
         return loss_metric(translation, prediction)
         
-    if modality == 'adt':
+    if target_modality == 'gex':
         prediction = mod(data)[-1]
         return loss_metric(translation, prediction)
     else:

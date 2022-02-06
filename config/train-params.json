@@ -2,5 +2,5 @@
     "epoch_count_gex": 3,
     "epoch_count_adt": 3,
     "batch_size": 100,
-    "batch_size_coupled": 80   
+    "batch_size_coupled": 50   
 }

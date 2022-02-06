@@ -16,7 +16,6 @@ from sklearn.metrics.pairwise import euclidean_distances
 from scipy import sparse
 
 # helper function to convert matrix to torch tensor
-
 def convert_sparse_matrix_to_sparse_tensor(X):
     coo = X.tocoo()
     values = coo.data
@@ -29,7 +28,7 @@ def convert_sparse_matrix_to_sparse_tensor(X):
 
 # vector normalizes each row in a data set (takes in a matrix of tensors)
 def normalize_data(data):
-    return torch.from_numpy(np.array([(tf.linalg.normalize(i)[0].numpy()) for i in gex_torch_data])).to(device)
+    return torch.from_numpy(np.array([(tf.linalg.normalize(i)[0].numpy()) for i in data]))
     
     
     
