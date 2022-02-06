@@ -7,9 +7,9 @@ import json
 sys.path.insert(0, 'src')
 
 from etl import read_data,get_data_test_adt,get_data_test_gex
-from model import predict_mod
+from model import predict_mod,predict_crossmodal
 from features import convert_sparse_matrix_to_sparse_tensor
-from train import get_train_gex, get_train_adt
+from train import get_train_coupled
 import torch
 
 
@@ -49,8 +49,8 @@ def main(targets):
         print("loss adt_to_gex: "+str(coupled_loss_adt_gex))
         print("loss adt_to_adt: "+str(coupled_loss_adt_adt))
         print("loss gex_to_gex: "+str(coupled_loss_gex_gex))
-        return [loss_test_adt, loss_test_gex, loss_test_gex_adt, coupled_loss_gex_adt, coupled_loss_adt_gex \
-                coupled_loss_adt_adt, coupled_loss_gex_gex]
+        return [loss_test_adt, loss_test_gex, loss_test_gex_adt, coupled_loss_gex_adt,
+                coupled_loss_adt_gex,coupled_loss_adt_adt, coupled_loss_gex_gex]
 
 if __name__ == '__main__':
     # run via:

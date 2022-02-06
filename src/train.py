@@ -15,7 +15,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from scipy import sparse
-from model import AE_gex,AE_adt
+from model import AE_coupled
 
 with open('config/train-params.json') as fh:
     train_cfg = json.load(fh)
@@ -29,15 +29,16 @@ batch_size_coupled = train_cfg['batch_size_coupled']
 # loss function of pairwise distance between latent space and original space
 def pairwise(code,curbatch):
     d_embedding = torch.pdist(code)
-    cur_embedding = torch.pdist(curbatch)
+    d_org = torch.pdist(curbatch)
     los = nn.MSELoss()
-    return los(d_embedding-cur_embedding)
+    return los(d_embedding,d_org)
 
 
 def get_train_coupled(df1, df2):
     print("Starting coupled model training")
     print("Disclaimer: currently training on low number of Epochs to save runtime")
     # initialize model
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model_coupled = AE_coupled().to(device)
     
     # create an optimizer object
@@ -75,12 +76,15 @@ def get_train_coupled(df1, df2):
             train_loss_pairwise_adt = criterion_pairwise(code_output_adt,cur_batch_adt)
 
             #train loss cross modal
-            loss_adt_to_gex = criterion_mse(outputs_adt_gex,cur_batch_gex)
-            loss_gex_to_adt = criterion_mse(outputs_gex_adt,cur_batch_adt)
+            #loss_adt_to_gex = criterion_mse(outputs_adt_gex,cur_batch_gex)
+            #loss_gex_to_adt = criterion_mse(outputs_gex_adt,cur_batch_adt)
+            
+            #train loss cross modal latent space
+            loss_mse_latent = criterion_mse(code_output_adt,code_output_gex)
 
             #final train loss
             train_loss = (train_loss_mse_gex+train_loss_mse_adt+train_loss_pairwise_gex
-                          +train_loss_pairwise_adt+loss_adt_to_gex+loss_gex_to_adt)
+                          +train_loss_pairwise_adt+loss_mse_latent)
 
 
             train_loss.backward()

@@ -148,17 +148,18 @@ def predict_mod(mod,test_data):
 # passed into 'test_data'
 def predict_crossmodal(mod, test_data, eval_data, modality):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    loss_metric = nn.MSELoss()
     
     data = test_data.to(device)
     translation = eval_data.to(device)
     
     if modality == 'gex':
         prediction = mod(data)[1]
-        return nn.MSELoss()(translation, prediction)
+        return loss_metric(translation, prediction)
         
     if modality == 'adt':
         prediction = mod(data)[-1]
-        return nn.MSELoss()(translation, prediction)
+        return loss_metric(translation, prediction)
     else:
         print('Please choose the modality of the test data.')
     
