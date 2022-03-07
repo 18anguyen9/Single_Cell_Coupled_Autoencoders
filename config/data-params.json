@@ -1,3 +1,4 @@
 {
-    "outdir": "data"
+    "indir": "data"
+    "training_size": 6000
 }

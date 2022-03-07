@@ -17,124 +17,202 @@ import torch.optim as optim
 from sklearn.metrics.pairwise import euclidean_distances
 from scipy import sparse
 
+
+with open('config/model-params.json') as f:
+    model_cfg = json.load(f)
     
-# create coupled autoencoder model    
+# create coupled autoencoder model 
+
 class AE_coupled(nn.Module):
     def __init__(self, **kwargs):
         super().__init__()
-        # create layers
-        # adt
-        self.encoder_input_layer_adt = nn.Linear(in_features=134, out_features=100)
-        self.encoder_layer64_adt = nn.Linear(in_features=100, out_features=64)
-        self.encoder_layer32_adt= nn.Linear(in_features=64, out_features=32)
         
-        self.decoder_layer32d_adt = nn.Linear(in_features=2, out_features=32)
-        self.decoder_layer64d_adt = nn.Linear(in_features=32, out_features=64)
-        self.decoder_layer100d_adt = nn.Linear(in_features=64, out_features=100)
-        self.decoder_output_layer_adt = nn.Linear(in_features=100, out_features=134)
+        # create layers / design architecture
         
-        #CODE LAYER
-        self.encoder_layer_code = nn.Linear(in_features=32, out_features=2)
+        # ADT / encoding
+        self.encoder_input_layer_adt = nn.Linear(in_features=model_cfg['adt_dims'], \
+                                                 out_features=model_cfg['adt_dims_layer1'])
         
-        #GEX
-        self.encoder_input_layer_gex= nn.Linear(in_features=13953, out_features=10000)
-        self.encoder_layer6000_gex= nn.Linear(in_features=10000, out_features=6000)
-        self.encoder_layer3000_gex= nn.Linear(in_features=6000, out_features=3000)
-        self.encoder_layer1000_gex= nn.Linear(in_features=3000, out_features=1000)
-        self.encoder_layer256_gex= nn.Linear(in_features=1000, out_features=256)
-        self.encoder_layer128_gex = nn.Linear(in_features=256, out_features=128)
-        self.encoder_layer64_gex = nn.Linear(in_features=128, out_features=64)
-        self.encoder_layer32_gex = nn.Linear(in_features=64, out_features=32)
+        self.encoder_layer1_adt = nn.Linear(in_features=model_cfg['adt_dims_layer1'], 
+                                            out_features=model_cfg['adt_dims_layer2'])
         
+        self.encoder_layer2_adt= nn.Linear(in_features=model_cfg['adt_dims_layer2'], \
+                                           out_features=model_cfg['latent_dims_input'])
         
-        self.decoder_layer32d_gex = nn.Linear(in_features=2, out_features=32)
-        self.decoder_layer64d_gex = nn.Linear(in_features=32, out_features=64)
-        self.decoder_layer128d_gex = nn.Linear(in_features=64, out_features=128)
-        self.decoder_layer256d_gex = nn.Linear(in_features=128, out_features=256)
-        self.decoder_layer1000d_gex = nn.Linear(in_features=256, out_features=1000)
-        self.decoder_layer3000d_gex = nn.Linear(in_features=1000, out_features=3000)
-        self.decoder_layer6000d_gex = nn.Linear(in_features=3000, out_features=6000)
-        self.decoder_layer10000d_gex = nn.Linear(in_features=6000, out_features=10000)
-        self.decoder_output_layer_gex = nn.Linear(in_features=10000, out_features=13953)
-    
+        # ADT / decoding
+
+        self.decoder_layer3_adt = nn.Linear(in_features=model_cfg['latent_dims'], \
+                                            out_features=model_cfg['latent_dims_input'])
+        
+        self.decoder_layer2_adt = nn.Linear(in_features=model_cfg['latent_dims_input'], \
+                                            out_features=model_cfg['adt_dims_layer2'])
+        
+        self.decoder_layer1_adt = nn.Linear(in_features=model_cfg['adt_dims_layer2'], \
+                                            out_features=model_cfg['adt_dims_layer1'])
+        
+        self.decoder_output_layer_adt = nn.Linear(in_features=model_cfg['adt_dims_layer1'], \
+                                                  out_features=model_cfg['adt_dims'])
+
+        # CODE LAYER / LATENT SPACE
+        self.encoder_layer_code = nn.Linear(in_features=model_cfg['latent_dims_input'], \
+                                            out_features=model_cfg['latent_dims'])
+
+        #GEX / encoding
+        self.encoder_input_layer_gex= nn.Linear(in_features=model_cfg['gex_dims'], \
+                                                out_features=model_cfg['gex_dims_layer1'])
+        
+        self.encoder_layer1_gex= nn.Linear(in_features=model_cfg['gex_dims_layer1'],\
+                                           out_features=model_cfg['gex_dims_layer2'])
+        
+        self.encoder_layer2_gex= nn.Linear(in_features=model_cfg['gex_dims_layer2'], \
+                                           out_features=model_cfg['gex_dims_layer3'])
+        
+        self.encoder_layer3_gex= nn.Linear(in_features=model_cfg['gex_dims_layer3'], \
+                                           out_features=model_cfg['gex_dims_layer4'])
+        
+        self.encoder_layer4_gex= nn.Linear(in_features=model_cfg['gex_dims_layer4'], \
+                                           out_features=model_cfg['gex_dims_layer5'])
+        
+        self.encoder_layer5_gex = nn.Linear(in_features=model_cfg['gex_dims_layer5'], \
+                                            out_features=model_cfg['gex_dims_layer6'])
+        
+        self.encoder_layer6_gex = nn.Linear(in_features=model_cfg['gex_dims_layer6'], \
+                                            out_features=model_cfg['gex_dims_layer7'])
+        
+        self.encoder_layer7_gex = nn.Linear(in_features=model_cfg['gex_dims_layer7'], \
+                                            out_features=model_cfg['latent_dims_input'])
+        
+        #GEX / decoding
+
+        self.decoder_layer8_gex = nn.Linear(in_features=model_cfg['latent_dims'], \
+                                            out_features=model_cfg['latent_dims_input'],)
+        
+        self.decoder_layer7_gex = nn.Linear(in_features=model_cfg['latent_dims_input'],\
+                                            out_features=model_cfg['gex_dims_layer7'])
+        
+        self.decoder_layer6_gex = nn.Linear(in_features=model_cfg['gex_dims_layer7'], \
+                                            out_features=model_cfg['gex_dims_layer6'])
+        
+        self.decoder_layer5_gex = nn.Linear(in_features=model_cfg['gex_dims_layer6'], \
+                                            out_features=model_cfg['gex_dims_layer5'])
+        
+        self.decoder_layer4_gex = nn.Linear(in_features=model_cfg['gex_dims_layer5'], \
+                                            out_features=model_cfg['gex_dims_layer4'])
+        
+        self.decoder_layer3_gex = nn.Linear(in_features=model_cfg['gex_dims_layer4'], \
+                                            out_features=model_cfg['gex_dims_layer3'])
+        
+        self.decoder_layer2_gex = nn.Linear(in_features=model_cfg['gex_dims_layer3'], \
+                                            out_features=model_cfg['gex_dims_layer2'])
+        
+        self.decoder_layer1_gex = nn.Linear(in_features=model_cfg['gex_dims_layer2'], \
+                                            out_features=model_cfg['gex_dims_layer1'])
+        
+        self.decoder_output_layer_gex = nn.Linear(in_features=model_cfg['gex_dims_layer1'], \
+                                                  out_features=model_cfg['gex_dims'])
+
+    # connect the layers together for encoding ADT
     def adt_to_code(self,features):
         activation = self.encoder_input_layer_adt(features)
         activation = torch.relu(activation)
-        activation = self.encoder_layer64_adt(activation)
+        activation = self.encoder_layer1_adt(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer32_adt(activation)
+        activation = self.encoder_layer2_adt(activation)
         activation = torch.relu(activation)
         code = self.encoder_layer_code(activation)
         return code
     
+    # connect the layers for encoding GEX
     def gex_to_code(self,features):
         activation = self.encoder_input_layer_gex(features)
-        activation = self.encoder_layer6000_gex(activation)
+        activation = self.encoder_layer1_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer3000_gex(activation)
+        activation = self.encoder_layer2_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer1000_gex(activation)
+        activation = self.encoder_layer3_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer256_gex(activation)
+        activation = self.encoder_layer4_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer128_gex(activation)
+        activation = self.encoder_layer5_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer64_gex(activation)
+        activation = self.encoder_layer6_gex(activation)
         activation = torch.relu(activation)
-        activation = self.encoder_layer32_gex(activation)
+        activation = self.encoder_layer7_gex(activation)
         activation = torch.relu(activation)
         code = self.encoder_layer_code(activation)
         return code
     
+    # connect the layers for decoding ADT
     def code_to_adt(self,code):
         activation = torch.relu(code)
-        activation = self.decoder_layer32d_adt(activation)
+        activation = self.decoder_layer3_adt(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer64d_adt(activation)
+        activation = self.decoder_layer2_adt(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer100d_adt(activation)
+        activation = self.decoder_layer1_adt(activation)
         activation = torch.relu(activation)
         activation = self.decoder_output_layer_adt(activation)
         return activation
     
+    # connect the layers for decoding GEX
     def code_to_gex(self,code):
         activation = torch.relu(code)
-        activation = self.decoder_layer32d_gex(activation)
+        activation = self.decoder_layer8_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer64d_gex(activation)
+        activation = self.decoder_layer7_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer128d_gex(activation)
+        activation = self.decoder_layer6_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer256d_gex(activation)
+        activation = self.decoder_layer5_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer1000d_gex(activation)
+        activation = self.decoder_layer4_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer3000d_gex(activation)
+        activation = self.decoder_layer3_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer6000d_gex(activation)
+        activation = self.decoder_layer2_gex(activation)
         activation = torch.relu(activation)
-        activation = self.decoder_layer10000d_gex(activation)
+        activation = self.decoder_layer1_gex(activation)
         activation = torch.relu(activation)
         activation = self.decoder_output_layer_gex(activation)
         return activation
     
-    def forward(self, features):
+    # normalize the GEX data
+    def norm_batch(self, batch_gex):
+        gex_torch_data_norm = torch.nn.functional.normalize(batch_gex,p=2, dim=1)
+        return gex_torch_data_norm
+    
+    # take the learned factor for scaling GEX to unnormalize GEX to its
+    # original scale
+    
+    def un_norm_gex(self,gex_output):
+        main_chunk = gex_output[:, :model_cfg['gex_dims']]
+        scale_col = gex_output[:, model_cfg['gex_dims']:model_cfg['gex_dims']+1]
+        return main_chunk*scale_col
+    
+    
+    # direct modality to the correct "path" of layers in the autoencoder
+    def forward(self, features,to_adt):
         # encode
         num_dim = features.shape[1]
-        if num_dim == 134:
-            code= self.adt_to_code(features)
-        elif num_dim==13953:
-            code= self.gex_to_code(features)
+        
+        if num_dim == model_cfg['adt_dims']:
+            code = self.adt_to_code(features)
+        elif num_dim==model_cfg['gex_dims']:
+
+            code = self.gex_to_code((features))
         else:
             return "invalid input"
-        
-        #decode
+
         output_layer_adt = self.code_to_adt(code)
         output_layer_gex = self.code_to_gex(code)
-        return code, output_layer_adt, output_layer_gex
+
+        output_layer_gex = self.un_norm_gex(output_layer_gex)
+
+        return code,output_layer_adt,output_layer_gex
    
     
 #compute reconstruction loss
+
 def predict_mod(mod,test_data):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     data = test_data.to(device)
@@ -142,7 +220,8 @@ def predict_mod(mod,test_data):
     return nn.MSELoss()(data, prediction)
 
 
-# compute losses given target modality
+# compute losses between modality and target modality (cross-modal prediction)
+
 def predict_crossmodal(mod, test_data, eval_data, target_modality):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     loss_metric = nn.MSELoss()
@@ -152,11 +231,11 @@ def predict_crossmodal(mod, test_data, eval_data, target_modality):
     
     if target_modality == 'adt':
         prediction = mod(data)[1]
-        return loss_metric(translation, prediction)
+        return np.sqrt(loss_metric(translation, prediction))
         
     if target_modality == 'gex':
         prediction = mod(data)[-1]
-        return loss_metric(translation, prediction)
+        return np.sqrt(loss_metric(translation, prediction))
     else:
         print('Please choose the modality of the test data.')
     
