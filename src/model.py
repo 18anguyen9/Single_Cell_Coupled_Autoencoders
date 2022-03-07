@@ -110,7 +110,7 @@ class AE_coupled(nn.Module):
                                             out_features=model_cfg['gex_dims_layer1'])
         
         self.decoder_output_layer_gex = nn.Linear(in_features=model_cfg['gex_dims_layer1'], \
-                                                  out_features=model_cfg['gex_dims'])
+                                                  out_features=model_cfg['gex_dims']+1)
 
     # connect the layers together for encoding ADT
     def adt_to_code(self,features):
@@ -190,8 +190,6 @@ class AE_coupled(nn.Module):
         main_chunk = gex_output[:, :model_cfg['gex_dims']]
         scale_col = gex_output[:, model_cfg['gex_dims']:model_cfg['gex_dims']+1]
         
-        print(main_chunk[0:3])
-        print(scale_col[0:3])
         
         return main_chunk*scale_col
     
@@ -237,11 +235,12 @@ def predict_crossmodal(mod, test_data, eval_data, target_modality):
     
     if target_modality == 'adt':
         prediction = mod(data)[1]
-        return np.sqrt(loss_metric(translation, prediction))
+        return (loss_metric(translation, prediction))**0.5
         
     if target_modality == 'gex':
         prediction = mod(data)[-1]
-        return np.sqrt(loss_metric(translation, prediction))
+        return (loss_metric(translation, prediction))**0.5
     else:
-        print('Please choose the modality of the test data.')
+        
+        ('Please choose the modality of the test data.')
     
