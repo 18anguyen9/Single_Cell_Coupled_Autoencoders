@@ -1,4 +1,4 @@
 {
-    "indir": "data"
-    "training_size": 6000
+    "indir": "data",
+    "training_size": 10000
 }
