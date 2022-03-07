@@ -17,19 +17,21 @@ import torch.optim as optim
 from scipy import sparse
 from model import AE_coupled
 
+from features import normalize_data
+
 with open('config/train-params.json') as fh:
     train_cfg = json.load(fh)
 
 # loss function of pairwise distance between latent space and original space
 
-def pairwise(code,curbatch, epochs):
+def pairwise(code, curbatch):
     d_embedding = torch.pdist(code)
     d_org = torch.pdist(curbatch)
-    los = nn.MSELoss()
-    return los(d_embedding,d_org)
+    loss = nn.MSELoss()
+    return loss(d_embedding,d_org)
 
 
-def get_train_coupled(gex, adt):
+def get_train_coupled(gex, adt, epochs):
     print("STARTING AUTOENCODER MODEL TRAINING")
     
     # initialize model
@@ -52,7 +54,7 @@ def get_train_coupled(gex, adt):
 
     for epoch in range(epochs):
         loss = 0
-        permutation = torch.randperm(df1.shape[0])
+        permutation = torch.randperm(gex.shape[0])
         
         for i in range(0, num_points, train_cfg['batch_size']):
             indices = permutation[i:i+train_cfg['batch_size']]
@@ -62,8 +64,8 @@ def get_train_coupled(gex, adt):
             optimizer_gex.zero_grad()
 
             #get predictions
-            code_output_gex,outputs_gex_adt,outputs_gex_gex = model_coupled(cur_batch_gex, False)
-            code_output_adt,outputs_adt_adt, outputs_adt_gex = model_coupled(cur_batch_adt, True)
+            code_output_gex, outputs_gex_adt, outputs_gex_gex = model_coupled(cur_batch_gex)
+            code_output_adt, outputs_adt_adt, outputs_adt_gex = model_coupled(cur_batch_adt)
 
             #train_loss mse
             train_loss_mse_gex = criterion_mse(outputs_gex_gex, org_cur_batch) * train_cfg['gex_mse_weight']

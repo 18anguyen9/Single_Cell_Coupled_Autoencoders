@@ -8,9 +8,10 @@ sys.path.insert(0, 'src')
 
 from etl import read_data, get_data_test_adt, get_data_test_gex
 from model import predict_mod, predict_crossmodal
-from features import convert_sparse_matrix_to_sparse_tensor
+from features import convert_sparse_matrix_to_sparse_tensor, normalize_data
 from train import get_train_coupled
 import torch
+from torch import cuda
 
 def main(targets):
     
@@ -18,6 +19,9 @@ def main(targets):
     coupled_model = None
     
     if 'test' in targets:
+        
+        if coupled_model != None:
+            coupled_model == None
         
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
@@ -39,10 +43,6 @@ def main(targets):
         #predict cross modal losses 
         coupled_loss_gex_adt = predict_crossmodal(coupled_model, test_data_gex, test_data_adt, 'adt').item()
         coupled_loss_adt_gex = predict_crossmodal(coupled_model, test_data_adt, test_data_gex, 'gex').item()
-        
-        #predict reconstruction losses
-#         coupled_loss_adt_adt  = predict_crossmodal(coupled_model, test_data_adt, test_data_adt, 'adt').item()
-#         coupled_loss_gex_gex =predict_crossmodal(coupled_model, test_data_gex, test_data_gex, 'gex').item()
         
         print("Loss of GEX to ADT: "+str(coupled_loss_gex_adt))
         print("Loss of ADT to GEX: "+str(coupled_loss_adt_gex))
@@ -76,14 +76,12 @@ def main(targets):
         print("Loss of ADT to GEX: "+str(coupled_loss_adt_gex))
     
         return [coupled_loss_gex_adt, coupled_loss_adt_gex]
-        
-    if 'reset' in targets:
-        
-        coupled_model = None
     
-    if 'visualize' in targets:
+    # this can be run if you get a cuda memory error.
+    
+    if 'clear-cache' in targets:
         
-        
+        torch.cuda.empty_cache()
         
 if __name__ == '__main__':
     # run via:

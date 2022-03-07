@@ -1,6 +1,6 @@
 {
     "epoch_count": 5,
-    "batch_size": 100,
-    "learning_rate": 1e-3
-    "gex_mse_rate": 0.001
+    "batch_size": 85,
+    "learning_rate": 1e-3,
+    "gex_mse_weight": 0.001
 }

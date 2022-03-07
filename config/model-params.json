@@ -1,17 +1,17 @@
 {
-    "adt_dims": 134
-    "adt_dims_layer1": 100
-    "adt_dims_layer2": 64
+    "adt_dims": 134,
+    "adt_dims_layer1": 100,
+    "adt_dims_layer2": 64,
     
-    "latent_dims_input": 32
-    "latent_dims": 10
+    "latent_dims_input": 32,
+    "latent_dims": 10,
     
-    "gex_dims": 13593
-    "gex_dims_layer1": 10000
-    "gex_dims_layer2": 6000
-    "gex_dims_layer3": 3000
-    "gex_dims_layer4": 1000
-    "gex_dims_layer5": 256
-    "gex_dims_layer6": 128
+    "gex_dims": 13953,
+    "gex_dims_layer1": 10000,
+    "gex_dims_layer2": 6000,
+    "gex_dims_layer3": 3000,
+    "gex_dims_layer4": 1000,
+    "gex_dims_layer5": 256,
+    "gex_dims_layer6": 128,
     "gex_dims_layer7": 64
 }

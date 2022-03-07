@@ -7,7 +7,7 @@ import scipy
 from scipy import sparse
 from features import convert_sparse_matrix_to_sparse_tensor,normalize_data
 
-with open('data-params.json') as f:
+with open('config/data-params.json') as f:
     data_cfg = json.load(f)
 
 # read data 

@@ -1,7 +1,7 @@
 from scipy import sparse
 import sys
 import os
-#import json
+import json
 
 
 #import anndata as ad
@@ -24,6 +24,7 @@ with open('config/model-params.json') as f:
 # create coupled autoencoder model 
 
 class AE_coupled(nn.Module):
+    
     def __init__(self, **kwargs):
         super().__init__()
         
@@ -185,19 +186,24 @@ class AE_coupled(nn.Module):
     # original scale
     
     def un_norm_gex(self,gex_output):
+        
         main_chunk = gex_output[:, :model_cfg['gex_dims']]
         scale_col = gex_output[:, model_cfg['gex_dims']:model_cfg['gex_dims']+1]
+        
+        print(main_chunk[0:3])
+        print(scale_col[0:3])
+        
         return main_chunk*scale_col
     
     
     # direct modality to the correct "path" of layers in the autoencoder
-    def forward(self, features,to_adt):
+    def forward(self, features):
         # encode
         num_dim = features.shape[1]
         
         if num_dim == model_cfg['adt_dims']:
             code = self.adt_to_code(features)
-        elif num_dim==model_cfg['gex_dims']:
+        elif num_dim == model_cfg['gex_dims']:
 
             code = self.gex_to_code((features))
         else:
@@ -208,7 +214,7 @@ class AE_coupled(nn.Module):
 
         output_layer_gex = self.un_norm_gex(output_layer_gex)
 
-        return code,output_layer_adt,output_layer_gex
+        return code, output_layer_adt, output_layer_gex
    
     
 #compute reconstruction loss
