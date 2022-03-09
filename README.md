@@ -16,7 +16,7 @@ Historically, analysis on single-cell data has been difficult to perform, due to
 
     * `test`: (`python3 run.py test`) Due to the size of the full data set, this will perform a test run on a much smaller subset of our data sets to simulate the output of our project. 
     
-    *  `test-full`: (`python3 run.py test-full`) This a full run of training the coupled autoencoder with the entire data set. This will take much longer (expect 20-30 minutes) than `test`, but will contain meaningful outputs compared to the simulated `test`. However, you will first need to download the entire data set using the following command line argument `aws s3 sync s3://openproblems-bio/public/ $HOME/data/ --no-sign-request` and moving the 'cite_gex_processed_training.h5ad' and 'cite_adt_processed_training.h5ad' files into the `/data` directory of this directory.
+    *  `test-full`: (`python3 run.py test-full`) This a full run of training the coupled autoencoder with the entire data set. This will take much longer (expect 20-30 minutes) than `test`, but will contain meaningful outputs compared to the simulated `test`. However, you will first need to download the entire data set using the following command line argument `aws s3 sync s3://openproblems-bio/public/ $HOME/data/ --no-sign-request` and moving the `cite_gex_processed_training.h5ad` and `cite_adt_processed_training.h5ad` files into the `/data` directory of this directory.
     
     *  `clear-cache`: The training computation is memory expensive. `python3 run.py clear-cache` can be run in the case that your machine runs out of memory. This will only happen when `test-full` is ran.
 
